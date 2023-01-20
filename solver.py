@@ -3,15 +3,11 @@ amount = 0
 base = 4
 solved = 1
 
-print(f"B0 = {B[0]} B1 = {B[1]} B2 = {B[2]} B3 = {B[3]} B4 = {B[4]} B5 = {B[5]}")
-print(" ")
-
 for v in range(base):
     for x in range(base):
         for c in range(base):
             for b in range(base):
                 B = [4, 4, 2, 2, 4, 4]
-                print(f" {v} {x} {c} {b}")
                 if base == 4 :
                     for z in range(1, 5):
                         #set changing sequence
@@ -91,10 +87,8 @@ for v in range(base):
                             B[1] = B[5]
                             B[0] = B[4]
 
-                print(f"B0 = {B[0]} B1 = {B[1]} B2 = {B[2]} B3 = {B[3]} B4 = {B[4]} B5 = {B[5]}")
                 
                 if B[1] == solved and B[2] == solved and B[3] == solved and B[4] == solved :
                     solution = (f"The sequence is {v} {x} {c} {b} ")
                     print(f"Solved with the sequence {v} {x} {c} {b} ")
                     break
-print(solution)
